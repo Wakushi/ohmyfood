@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>OhMyFood</title>
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="./css/styles.css" />
+	</head>
+	<body>
+		<header class="flex--center">
+			<div class="logo-container">
+				<img
+					src="./assets/images/logo/ohmyfood@2x.svg"
+					alt="OhMyFood's logo"
+				/>
+			</div>
+		</header>
+		<main>
+			<!-- LOCATION BANNER -->
+			<div class="location-banner flex--center gap-m">
+				<div class="location-icon">
+					<img
+						src="./assets/images/icons/pin.svg"
+						alt="Location pin logo"
+					/>
+				</div>
+				<span>Paris, Belleville</span>
+			</div>
+			<!-- HERO -->
+			<section class="hero flex--center flex--column">
+				<h1>Réservez le menu qui vous convient</h1>
+				<span class="subheading"
+					>Découvrez des restaurants d'exception, sélectionnés par nos
+					soins.</span
+				>
+				<a class="action--button" href="#restaurants-list"
+					>Explorer nos restaurants</a
+				>
+			</section>
+			<!-- PRODUCT FEATURES SECTION -->
+			<section class="features flex--center flex--column gap-l">
+				<h2>Fonctionnement</h2>
+				<div class="feature-item flex--align gap-l">
+					<span class="badge">1</span>
+					<div class="feature-icon">
+						<img
+							src="./assets/images/icons/smartphone.svg"
+							alt="Smartphone icon"
+						/>
+					</div>
+					<h4>Choisissez votre restaurant</h4>
+				</div>
+				<div class="feature-item flex--align gap-l">
+					<span class="badge">2</span>
+					<div class="feature-icon">
+						<img
+							src="./assets/images/icons/list.svg"
+							alt="List icon"
+						/>
+					</div>
+					<h4>Composez votre menu</h4>
+				</div>
+				<div class="feature-item flex--align gap-l">
+					<span class="badge">3</span>
+					<div class="feature-icon">
+						<img
+							src="./assets/images/icons/store.svg"
+							alt="Shop icon"
+						/>
+					</div>
+					<h4>Dégustez au restaurant</h4>
+				</div>
+			</section>
+			<!-- RESTAURANT LIST SECTION -->
+			<section class="restaurant-list flex--center flex--column gap-l">
+				<h2>Restaurants</h2>
+				<article>
+					<a href="#" class="restaurant-item flex--column">
+						<div class="restaurant-image">
+							<img
+								src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+								alt=""
+							/>
+						</div>
+						<div class="restaurant-details flex--between">
+							<div class="flex--column gap-xs">
+								<h3>La palette du goût</h3>
+								<span class="subtitle">Ménilmontant</span>
+							</div>
+							<div class="favorite-icon">
+								<img
+									src="./assets/images/icons/heart-empty.svg"
+									alt="Empty heart icon"
+								/>
+							</div>
+						</div>
+					</a>
+				</article>
+			</section>
+		</main>
+	</body>
+</html>

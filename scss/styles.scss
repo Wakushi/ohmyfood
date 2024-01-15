@@ -1,0 +1,231 @@
+// CSS Variables
+
+:root {
+	--primary-color: #9356dc;
+	--secondary-color: #ff79da;
+	--tertiary-color: #99e2d0;
+	--box-shadow-s: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+	--box-shadow-m: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	--box-shadow-l: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+	--main-font: "Roboto", sans-serif;
+	--secondary-font: "Shrikhand", cursive;
+	--text-main-color: #000;
+	--text-secondary-color: #353535;
+	--background-grey-light: #f6f6f6;
+	--background-grey-dark: #eaeaea;
+	--button-gradient: linear-gradient(
+		193deg,
+		#9356dc -11.44%,
+		#ff79da 123.93%
+	);
+	--button-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+	--section-padding: 3rem 1.25rem;
+	--padding-s: 0.875rem;
+}
+
+// CSS Reset
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--main-font);
+	color: var(--text-main-color);
+}
+
+img {
+	display: block;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+a {
+	text-decoration: none;
+}
+
+// Modifiers
+
+.flex,
+.flex--center,
+.flex--column,
+.flex--around,
+.flex--between,
+.flex--align {
+	display: flex;
+}
+
+.flex--center,
+.flex--around,
+.flex--between {
+	align-items: center;
+}
+
+.flex--center {
+	justify-content: center;
+}
+
+.flex--column {
+	flex-direction: column;
+}
+
+.flex--around {
+	justify-content: space-around;
+}
+
+.flex--between {
+	justify-content: space-between;
+}
+
+.flex--align {
+	align-items: center;
+}
+
+.gap-xs {
+	gap: 0.3rem;
+}
+
+.gap-m {
+	gap: 1rem;
+}
+
+.gap-l {
+	gap: 1.625rem;
+}
+
+// Components
+
+.action--button {
+	color: #fff;
+	text-align: center;
+	padding: 0.8125rem 1.125rem;
+	border-radius: 1.5625rem;
+	background: var(--button-gradient);
+	box-shadow: var(--button-shadow);
+}
+
+.badge {
+	position: absolute;
+	height: 24px;
+	width: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+	background-color: var(--primary-color);
+	font-size: 0.875rem;
+	color: #fff;
+	border-radius: 50%;
+}
+
+// Typography
+
+h1,
+.subheading {
+	text-align: center;
+}
+
+h1 {
+	font-size: 1.5rem;
+	max-width: 90%;
+	margin-bottom: 1rem;
+}
+
+h2 {
+	align-self: start;
+}
+
+h3 {
+	font-size: 1.125rem;
+}
+
+h4 {
+	font-size: 1rem;
+}
+
+.subheading,
+.subtitle {
+	font-weight: 300;
+}
+
+.subheading {
+	font-size: 1.125rem;
+	margin-bottom: 1.625rem;
+}
+
+.subtitle {
+}
+
+// Icons
+
+// Header
+
+header {
+	position: relative;
+	padding: var(--padding-s);
+	box-shadow: var(--box-shadow-s);
+	.logo-container {
+		max-width: 162px;
+	}
+}
+
+// Main
+
+main {
+	background-color: var(--background-grey-light);
+
+	.location-banner {
+		padding: var(--padding-s);
+		background-color: var(--background-grey-dark);
+		box-shadow: var(--box-shadow-m);
+
+		span {
+			color: var(--text-secondary-color);
+		}
+	}
+
+	.hero {
+		padding: 2rem;
+	}
+
+	.features,
+	.restaurant-list {
+		padding: var(--section-padding);
+	}
+
+	.feature-item,
+	.restaurant-item {
+		position: relative;
+		box-shadow: var(--box-shadow-l);
+	}
+
+	.features {
+		background-color: #fff;
+		.feature-item {
+			background-color: var(--background-grey-light);
+			padding: 1.75rem 2.125rem;
+			border-radius: 1.25rem;
+			min-width: 322px;
+			.badge {
+				left: -12px;
+			}
+		}
+	}
+
+	.restaurant-list {
+		.restaurant-item {
+			border-radius: 1rem;
+			height: 250px;
+		}
+
+		.restaurant-image {
+			border-radius: 1rem 1rem 0 0;
+			max-height: 180px;
+			overflow: hidden;
+		}
+
+		.restaurant-details {
+			padding: 1rem;
+		}
+	}
+}
