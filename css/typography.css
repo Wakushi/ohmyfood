@@ -1,0 +1,34 @@
+h1,
+.subheading {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  max-width: 90%;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  align-self: start;
+}
+
+h3 {
+  font-size: 1.125rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+.subheading,
+.subtitle {
+  font-weight: 300;
+}
+
+.subheading {
+  font-size: 1.125rem;
+  margin-bottom: 1.625rem;
+}
+
+/*# sourceMappingURL=typography.css.map */

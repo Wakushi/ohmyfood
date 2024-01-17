@@ -1,0 +1,30 @@
+.restaurant-banner {
+  position: relative;
+}
+.restaurant-banner .transition-block {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 30px;
+  width: 100%;
+  background-color: var(--grey-color-l1);
+  border-radius: 2rem 2rem 0 0;
+}
+
+.menu {
+  background-color: var(--grey-color-l1);
+  padding: 0 1rem;
+}
+.menu .menu-topbar {
+  position: relative;
+}
+.menu .menu-topbar h1 {
+  font-family: var(--secondary-font);
+  font-size: 1.75rem;
+}
+.menu .menu-topbar .favorite-icon {
+  right: 5px;
+  bottom: 22px;
+}
+
+/*# sourceMappingURL=menu.css.map */

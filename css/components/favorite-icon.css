@@ -1,0 +1,46 @@
+@keyframes heart-grows {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.favorite-icon {
+  position: absolute;
+  right: 30px;
+  bottom: 25px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.favorite-icon i {
+  font-size: 1.7rem;
+}
+.favorite-icon .icon-container,
+.favorite-icon .fa-regular {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.favorite-icon .icon-container {
+  display: none;
+}
+.favorite-icon .icon-container .fa-heart {
+  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.favorite-icon:hover .icon-container, .favorite-icon:focus-visible .icon-container {
+  display: inline-block;
+  animation: heart-grows 0.3s ease-in-out;
+}
+.favorite-icon:hover .fa-regular, .favorite-icon:focus-visible .fa-regular {
+  display: none;
+}
+
+/*# sourceMappingURL=favorite-icon.css.map */

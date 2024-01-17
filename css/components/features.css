@@ -1,0 +1,17 @@
+.features {
+  padding: var(--section-padding);
+  background-color: #fff;
+}
+.features .feature-item {
+  position: relative;
+  background-color: var(--grey-color-l1);
+  padding: 1.75rem 2.125rem;
+  border-radius: 1.25rem;
+  min-width: 322px;
+  box-shadow: var(--box-shadow-xl);
+}
+.features .feature-item .badge {
+  left: -12px;
+}
+
+/*# sourceMappingURL=features.css.map */

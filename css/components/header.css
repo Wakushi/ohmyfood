@@ -1,0 +1,10 @@
+header {
+  position: relative;
+  padding: var(--padding-s);
+  box-shadow: var(--box-shadow-s);
+}
+header .logo-container {
+  max-width: 162px;
+}
+
+/*# sourceMappingURL=header.css.map */
