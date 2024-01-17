@@ -1,0 +1,47 @@
+@import "../animations/heart-grows.animation.scss";
+
+.favorite-icon {
+	position: absolute;
+	right: 30px;
+	bottom: 25px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+
+	i {
+		font-size: 1.7rem;
+	}
+
+	.icon-container,
+	.fa-regular {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.icon-container {
+		display: none;
+
+		.fa-heart {
+			background: linear-gradient(
+				193deg,
+				#9356dc -11.44%,
+				#ff79da 123.93%
+			);
+			-webkit-background-clip: text;
+			background-clip: text;
+			color: transparent;
+		}
+	}
+
+	&:hover,
+	&:focus-visible {
+		.icon-container {
+			display: inline-block;
+			animation: heart-grows 0.3s ease-in-out;
+		}
+		.fa-regular {
+			display: none;
+		}
+	}
+}

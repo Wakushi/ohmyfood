@@ -1,0 +1,50 @@
+.flex,
+.flex--center,
+.flex--column,
+.flex--around,
+.flex--between,
+.flex--align {
+	display: flex;
+}
+
+.flex--center,
+.flex--around,
+.flex--between {
+	align-items: center;
+}
+
+.flex--center {
+	justify-content: center;
+}
+
+.flex--column {
+	flex-direction: column;
+}
+
+.flex--around {
+	justify-content: space-around;
+}
+
+.flex--between {
+	justify-content: space-between;
+}
+
+.flex--align {
+	align-items: center;
+}
+
+.gap-xs {
+	gap: 0.3rem;
+}
+
+.gap-s {
+	gap: 0.5rem;
+}
+
+.gap-m {
+	gap: 1rem;
+}
+
+.gap-l {
+	gap: 1.625rem;
+}
