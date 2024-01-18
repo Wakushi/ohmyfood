@@ -3,6 +3,8 @@
 	text-align: center;
 	padding: 0.8125rem 1.125rem;
 	border-radius: 1.5625rem;
+	min-width: 186px;
+	align-self: center;
 	background: var(--button-gradient);
 	box-shadow: var(--button-shadow);
 }

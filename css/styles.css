@@ -67,6 +67,10 @@
   gap: 0.5rem;
 }
 
+.gap-sm {
+  gap: 0.75rem;
+}
+
 .gap-m {
   gap: 1rem;
 }
@@ -116,6 +120,10 @@ header {
 header .logo-container {
   max-width: 162px;
 }
+header .back-arrow {
+  position: absolute;
+  left: 1rem;
+}
 
 footer {
   background-color: var(--grey-color-d1);
@@ -136,6 +144,8 @@ footer ul span {
   text-align: center;
   padding: 0.8125rem 1.125rem;
   border-radius: 1.5625rem;
+  min-width: 186px;
+  align-self: center;
   background: var(--button-gradient);
   box-shadow: var(--button-shadow);
 }
@@ -263,7 +273,7 @@ footer ul span {
 
 .menu {
   background-color: var(--grey-color-l1);
-  padding: 0 1rem;
+  padding: 0 1rem 2.5rem;
 }
 .menu .menu-topbar {
   position: relative;
@@ -275,6 +285,62 @@ footer ul span {
 .menu .menu-topbar .favorite-icon {
   right: 5px;
   bottom: 22px;
+}
+.menu .menu-sub-section {
+  padding-bottom: 2.5rem;
+}
+.menu .menu-sub-section h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.menu .menu-sub-section h2::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 40px;
+  background-color: var(--tertiary-color);
+  margin: 0.3rem 0;
+}
+.menu .menu-sub-section .dish {
+  box-shadow: var(--box-shadow-l);
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 100%;
+  background-color: #fff;
+}
+.menu .menu-sub-section .dish:hover .dish-slide, .menu .menu-sub-section .dish:focus-visible .dish-slide {
+  width: 100%;
+}
+.menu .menu-sub-section .dish .dish-slide {
+  width: 120%;
+  transition: width 300ms ease-in-out;
+}
+.menu .menu-sub-section .dish .dish-slide .dish-price {
+  background-color: #fff;
+  color: var(--grey-color-d1);
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+}
+.menu .menu-sub-section .dish .dish-slide .dish-content {
+  padding: 1rem 0 1rem 1rem;
+  width: 100%;
+  overflow: hidden;
+}
+.menu .menu-sub-section .dish .dish-slide .dish-content h3,
+.menu .menu-sub-section .dish .dish-slide .dish-content .dish-detail {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+}
+.menu .menu-sub-section .dish .dish-slide .dish-content .dish-detail {
+  font-weight: 300;
+}
+.menu .menu-sub-section .dish .dish-slide .check-button {
+  min-width: 60px;
 }
 
 * {
