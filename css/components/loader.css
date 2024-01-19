@@ -1,0 +1,59 @@
+@keyframes fade-out {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes knife-animation {
+  0% {
+    transform: rotate(-90deg);
+  }
+  30% {
+    transform: rotate(-45deg) translateY(0px);
+  }
+  100% {
+    transform: rotate(-45deg) translate(50px, 50px);
+    opacity: 0;
+  }
+}
+@keyframes fork-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(-45deg) translate(-50px, -50px);
+    opacity: 0;
+  }
+}
+.loading-screen {
+  background-color: #fff;
+  opacity: 0.9;
+  position: fixed;
+  height: 100%;
+  z-index: 2;
+  width: 100vw;
+  animation: fade-out 1.5s 500ms ease-in-out forwards;
+}
+.loading-screen .loader {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.loading-screen .loader .loader-icon {
+  position: absolute;
+}
+.loading-screen .loader .loader-icon.knife-icon {
+  transform: rotate(-90deg);
+  animation: knife-animation 1.5s 500ms ease-in-out forwards;
+}
+.loading-screen .loader .loader-icon.fork-icon {
+  animation: fork-animation 1.5s 500ms ease-in-out forwards;
+}
+
+/*# sourceMappingURL=loader.css.map */
