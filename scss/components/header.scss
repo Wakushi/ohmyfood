@@ -2,8 +2,17 @@ header {
 	position: relative;
 	padding: var(--padding-s);
 	box-shadow: var(--box-shadow-s);
+
+	@media (width > 768px) {
+		padding: var(--padding-l);
+	}
+
 	.logo-container {
 		max-width: 162px;
+
+		@media (width > 768px) {
+			max-width: 200px;
+		}
 	}
 	.back-arrow {
 		position: absolute;

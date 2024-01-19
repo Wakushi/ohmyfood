@@ -3,8 +3,18 @@ header {
   padding: var(--padding-s);
   box-shadow: var(--box-shadow-s);
 }
+@media (width > 768px) {
+  header {
+    padding: var(--padding-l);
+  }
+}
 header .logo-container {
   max-width: 162px;
+}
+@media (width > 768px) {
+  header .logo-container {
+    max-width: 200px;
+  }
 }
 header .back-arrow {
   position: absolute;

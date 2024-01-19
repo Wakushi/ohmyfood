@@ -2,10 +2,42 @@ footer {
   background-color: var(--grey-color-d1);
   padding: 1.375rem 1.6rem;
 }
+@media (width > 1024px) {
+  footer {
+    flex-direction: row-reverse !important;
+    padding: 1.875rem 1.56rem;
+    min-height: 114px;
+  }
+}
 footer .small-logo-container {
   max-width: 138px;
   margin-bottom: 1rem;
   filter: invert(1);
+}
+@media (width > 1024px) {
+  footer .small-logo-container {
+    margin-bottom: 0;
+    align-self: flex-end;
+    margin-right: 2rem;
+  }
+}
+@media (width > 1024px) {
+  footer ul {
+    flex-direction: row !important;
+    align-items: center;
+  }
+  footer ul li {
+    align-self: flex-end;
+  }
+  footer ul li span {
+    font-weight: 500;
+  }
+  footer ul li:nth-child(2) {
+    margin-right: 2.5rem;
+  }
+  footer ul li:nth-child(4) {
+    margin-right: 4.5rem;
+  }
 }
 footer ul li,
 footer ul span {
