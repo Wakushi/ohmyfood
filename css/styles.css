@@ -351,22 +351,6 @@ footer ul span {
     height: 400px;
   }
 }
-.restaurant-banner.menilmontant {
-  background: url("../../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-  background-size: cover;
-}
-.restaurant-banner.charonne {
-  background: url("../../assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-  background-size: cover;
-}
-.restaurant-banner.cite-rouge {
-  background: url("../../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-  background-size: cover;
-}
-.restaurant-banner.folie-mericourt {
-  background: url("../../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-  background-size: cover;
-}
 .restaurant-banner .transition-block {
   position: absolute;
   bottom: -1px;
@@ -508,6 +492,7 @@ footer ul span {
   position: fixed;
   height: 100%;
   z-index: 2;
+  pointer-events: none;
   width: 100vw;
   animation: fade-out 1.5s 500ms ease-in-out forwards;
 }
