@@ -7,6 +7,13 @@
 	align-self: center;
 	background: var(--button-gradient);
 	box-shadow: var(--button-shadow);
+	transition: ease-in-out 300ms;
+
+	&:hover,
+	&:focus-visible {
+		opacity: 0.8;
+		box-shadow: var(--button-shadow-hover);
+	}
 }
 
 .badge {
