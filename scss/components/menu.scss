@@ -2,6 +2,10 @@
 	position: relative;
 	height: 250px;
 
+	@media (width > 1024px) {
+		height: 400px;
+	}
+
 	&.menilmontant {
 		background: url("../../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 		background-size: cover;
@@ -25,20 +29,31 @@
 	.transition-block {
 		position: absolute;
 		bottom: -1px;
-		left: 0;
 		height: 30px;
+		left: 50%;
+		transform: translateX(-50%);
 		width: 100%;
 		background-color: var(--grey-color-l1);
 		border-radius: 2rem 2rem 0 0;
+		max-width: var(--max-width);
+
+		@media (width > 1024px) {
+			height: 40px;
+		}
 	}
 }
 
 .menu {
 	background-color: var(--grey-color-l1);
 	padding: 0 1rem 2.5rem;
+	max-width: var(--max-width);
+	margin: 0 auto;
 
 	.menu-topbar {
 		position: relative;
+		min-width: 320px;
+		align-self: center;
+
 		h1 {
 			font-family: var(--secondary-font);
 			font-size: 1.75rem;
@@ -52,6 +67,11 @@
 
 	.menu-sub-section {
 		padding-bottom: 2.5rem;
+
+		@media (width > 768px) {
+			width: 634px;
+			margin: 0 auto;
+		}
 
 		h2 {
 			font-size: 1rem;
@@ -83,20 +103,21 @@
 			}
 
 			.dish-slide {
-				width: 120%;
+				width: calc(100% + 70px);
 				transition: width 300ms ease-in-out;
+				justify-content: space-between;
 
 				.dish-price {
 					background: #fff;
 					color: var(--grey-color-d1);
 					display: flex;
 					align-items: flex-end;
-					padding: 1rem 1.5rem 1rem 0.5rem;
+					padding: 1rem 1.5rem;
 				}
 
 				.dish-content {
 					padding: 1rem 0 1rem 1rem;
-					width: 100%;
+					width: 80%;
 					overflow: hidden;
 
 					h3,
