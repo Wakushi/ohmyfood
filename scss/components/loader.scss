@@ -8,23 +8,24 @@
 	z-index: 2;
 	pointer-events: none;
 	width: 100vw;
-	animation: fade-out 1.5s 500ms ease-in-out forwards;
+	animation: fade-out 3s 500ms ease-in-out forwards;
 
 	.loader {
 		position: relative;
 		width: 100px;
 		height: 100px;
-		.loader-icon {
-			position: absolute;
+	}
 
-			&.knife-icon {
-				transform: rotate(-90deg);
-				animation: knife-animation 1.5s 500ms ease-in-out forwards;
-			}
+	.loader-icon {
+		position: absolute;
 
-			&.fork-icon {
-				animation: fork-animation 1.5s 500ms ease-in-out forwards;
-			}
+		&.knife-icon {
+			transform: rotate(-90deg);
+			animation: knife-animation 1.5s 500ms ease-in-out forwards;
+		}
+
+		&.fork-icon {
+			animation: fork-animation 1.5s 500ms ease-in-out forwards;
 		}
 	}
 }

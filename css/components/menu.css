@@ -77,6 +77,9 @@
 .menu .menu-sub-section .dish:hover .dish-slide, .menu .menu-sub-section .dish:focus-visible .dish-slide {
   width: 100%;
 }
+.menu .menu-sub-section .dish:hover .dish-slide .check-button img, .menu .menu-sub-section .dish:focus-visible .dish-slide .check-button img {
+  transform: rotate(0deg);
+}
 .menu .menu-sub-section .dish .dish-slide {
   width: calc(100% + 70px);
   transition: width 300ms ease-in-out;
@@ -107,6 +110,13 @@
 }
 .menu .menu-sub-section .dish .dish-slide .check-button {
   min-width: 60px;
+  background-color: var(--tertiary-color);
+}
+.menu .menu-sub-section .dish .dish-slide .check-button img {
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  transition: 300ms 120ms ease-in-out;
 }
 
 /*# sourceMappingURL=menu.css.map */

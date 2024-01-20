@@ -39,21 +39,21 @@
   z-index: 2;
   pointer-events: none;
   width: 100vw;
-  animation: fade-out 1.5s 500ms ease-in-out forwards;
+  animation: fade-out 3s 500ms ease-in-out forwards;
 }
 .loading-screen .loader {
   position: relative;
   width: 100px;
   height: 100px;
 }
-.loading-screen .loader .loader-icon {
+.loading-screen .loader-icon {
   position: absolute;
 }
-.loading-screen .loader .loader-icon.knife-icon {
+.loading-screen .loader-icon.knife-icon {
   transform: rotate(-90deg);
   animation: knife-animation 1.5s 500ms ease-in-out forwards;
 }
-.loading-screen .loader .loader-icon.fork-icon {
+.loading-screen .loader-icon.fork-icon {
   animation: fork-animation 1.5s 500ms ease-in-out forwards;
 }
 

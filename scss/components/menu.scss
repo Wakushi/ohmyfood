@@ -80,6 +80,12 @@
 			&:focus-visible {
 				.dish-slide {
 					width: 100%;
+
+					.check-button {
+						img {
+							transform: rotate(0deg);
+						}
+					}
 				}
 			}
 
@@ -117,6 +123,13 @@
 
 				.check-button {
 					min-width: 60px;
+					background-color: var(--tertiary-color);
+					img {
+						width: 20px;
+						height: 20px;
+						transform: rotate(45deg);
+						transition: 300ms 120ms ease-in-out;
+					}
 				}
 			}
 		}

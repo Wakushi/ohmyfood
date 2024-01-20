@@ -421,6 +421,9 @@ footer ul span {
 .menu .menu-sub-section .dish:hover .dish-slide, .menu .menu-sub-section .dish:focus-visible .dish-slide {
   width: 100%;
 }
+.menu .menu-sub-section .dish:hover .dish-slide .check-button img, .menu .menu-sub-section .dish:focus-visible .dish-slide .check-button img {
+  transform: rotate(0deg);
+}
 .menu .menu-sub-section .dish .dish-slide {
   width: calc(100% + 70px);
   transition: width 300ms ease-in-out;
@@ -451,6 +454,13 @@ footer ul span {
 }
 .menu .menu-sub-section .dish .dish-slide .check-button {
   min-width: 60px;
+  background-color: var(--tertiary-color);
+}
+.menu .menu-sub-section .dish .dish-slide .check-button img {
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  transition: 300ms 120ms ease-in-out;
 }
 
 @keyframes fade-out {
@@ -494,21 +504,21 @@ footer ul span {
   z-index: 2;
   pointer-events: none;
   width: 100vw;
-  animation: fade-out 1.5s 500ms ease-in-out forwards;
+  animation: fade-out 3s 500ms ease-in-out forwards;
 }
 .loading-screen .loader {
   position: relative;
   width: 100px;
   height: 100px;
 }
-.loading-screen .loader .loader-icon {
+.loading-screen .loader-icon {
   position: absolute;
 }
-.loading-screen .loader .loader-icon.knife-icon {
+.loading-screen .loader-icon.knife-icon {
   transform: rotate(-90deg);
   animation: knife-animation 1.5s 500ms ease-in-out forwards;
 }
-.loading-screen .loader .loader-icon.fork-icon {
+.loading-screen .loader-icon.fork-icon {
   animation: fork-animation 1.5s 500ms ease-in-out forwards;
 }
 
