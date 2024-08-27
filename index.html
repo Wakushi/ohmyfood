@@ -1,265 +1,240 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>OhMyFood</title>
-		<!-- Google Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap"
-			rel="stylesheet"
-		/>
-		<!-- Font Awesome -->
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-		<link rel="stylesheet" href="./css/styles.css" />
-	</head>
-	<body>
-		<div class="loading-screen flex--center">
-			<div class="loader">
-				<div class="loader-icon fork-icon">
-					<img src="./assets/images/fork.png" alt="Fork image" />
-				</div>
-				<div class="loader-icon knife-icon">
-					<img src="./assets/images/knife.png" alt="Knife image" />
-				</div>
-			</div>
-		</div>
-		<header class="flex--center">
-			<div class="logo-container">
-				<img
-					src="./assets/images/logo/ohmyfood@2x.svg"
-					alt="OhMyFood's logo"
-				/>
-			</div>
-		</header>
-		<main>
-			<!-- LOCATION BANNER -->
-			<div class="location-banner flex--center gap-m">
-				<div class="location-icon">
-					<img
-						src="./assets/images/icons/pin.svg"
-						alt="Location pin logo"
-					/>
-				</div>
-				<span>Paris, Belleville</span>
-			</div>
-			<!-- HERO -->
-			<section class="hero flex--center flex--column">
-				<h1>Réservez le menu qui vous convient</h1>
-				<span class="subheading"
-					>Découvrez des restaurants d'exception, sélectionnés par nos
-					soins.</span
-				>
-				<a class="action--button" href="#restaurants-list"
-					>Explorer nos restaurants</a
-				>
-			</section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OhMyFood</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="loading-screen flex--center">
+      <div class="loader">
+        <div class="loader-icon fork-icon">
+          <img src="./assets/images/fork.png" alt="Fork image" />
+        </div>
+        <div class="loader-icon knife-icon">
+          <img src="./assets/images/knife.png" alt="Knife image" />
+        </div>
+      </div>
+    </div>
+    <header class="flex--center">
+      <div class="logo-container">
+        <img src="./assets/images/logo/ohmyfood@2x.svg" alt="OhMyFood's logo" />
+      </div>
+    </header>
+    <main>
+      <!-- LOCATION BANNER -->
+      <div class="location-banner flex--center gap-m">
+        <div class="location-icon">
+          <img src="./assets/images/icons/pin.svg" alt="Location pin logo" />
+        </div>
+        <span>Paris, Belleville</span>
+      </div>
+      <!-- HERO -->
+      <section class="hero flex--center flex--column">
+        <h1>Réservez le menu qui vous convient</h1>
+        <span class="subheading"
+          >Découvrez des restaurants d'exception, sélectionnés par nos
+          soins.</span
+        >
+        <a class="action--button" href="#restaurants-list"
+          >Explorer nos restaurants</a
+        >
+      </section>
 
-			<div id="ad-parcel-container" data-ad-parcel-id='782576213'>
-				<script src='https://lemonads.vercel.app/ad-parcel.js' defer></script>
-			  </div>
+      <div id="ad-parcel-container" data-ad-parcel-id="782576213">
+        <script src="https://lemonads.vercel.app/ad-parcel.js"></script>
+      </div>
 
-			<!-- PRODUCT FEATURES SECTION -->
-			<section class="features flex--center flex--column gap-l">
-				<div class="features-list flex--center gap-l">
-					<h2>Fonctionnement</h2>
-					<div class="feature-item flex--align gap-l">
-						<span class="badge">1</span>
-						<div class="feature-icon">
-							<img
-								src="./assets/images/icons/smartphone.svg"
-								alt="Smartphone icon"
-							/>
-						</div>
-						<h4>Choisissez votre restaurant</h4>
-					</div>
-					<div class="feature-item flex--align gap-l">
-						<span class="badge">2</span>
-						<div class="feature-icon">
-							<img
-								src="./assets/images/icons/list.svg"
-								alt="List icon"
-							/>
-						</div>
-						<h4>Composez votre menu</h4>
-					</div>
-					<div class="feature-item flex--align gap-l">
-						<span class="badge">3</span>
-						<div class="feature-icon">
-							<img
-								src="./assets/images/icons/store.svg"
-								alt="Shop icon"
-							/>
-						</div>
-						<h4>Dégustez au restaurant</h4>
-					</div>
-				</div>
-			</section>
-			<!-- RESTAURANT LIST SECTION -->
-			<section
-				id="restaurants-list"
-				class="restaurants flex--center gap-l"
-			>
-				<div class="restaurants-list flex--center gap-l">
-					<h2>Restaurants</h2>
-					<!-- LA PALETTE DU GOÛT -->
-					<article id="menilmontant">
-						<div class="restaurant-item-container flex--column">
-							<div class="tag-new">Nouveau</div>
-							<a
-								href="./pages/menilmontant.html"
-								class="restaurant-item flex--column"
-							>
-								<div class="restaurant-image">
-									<img
-										src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-										alt="Restaurant picture"
-									/>
-								</div>
-								<div class="restaurant-details flex--between">
-									<div class="flex--column gap-xs">
-										<h3>La palette du goût</h3>
-										<span class="subtitle"
-											>Ménilmontant</span
-										>
-									</div>
-								</div>
-							</a>
-							<div class="favorite-icon">
-								<i class="fa-regular fa-heart"></i>
-								<div class="icon-container">
-									<i class="fa-solid fa-heart"></i>
-								</div>
-							</div>
-						</div>
-					</article>
-					<!-- LA NOTE ENCHANTÉE -->
-					<article id="charonne">
-						<div class="restaurant-item-container flex--column">
-							<div class="tag-new">Nouveau</div>
-							<a
-								href="./pages/charonne.html"
-								class="restaurant-item flex--column"
-							>
-								<div class="restaurant-image">
-									<img
-										src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-										alt="Restaurant picture"
-									/>
-								</div>
-								<div class="restaurant-details flex--between">
-									<div class="flex--column gap-xs">
-										<h3>La note enchantée</h3>
-										<span class="subtitle">Charonne</span>
-									</div>
-								</div>
-							</a>
-							<div class="favorite-icon">
-								<i class="fa-regular fa-heart"></i>
-								<div class="icon-container">
-									<i class="fa-solid fa-heart"></i>
-								</div>
-							</div>
-						</div>
-					</article>
-					<!-- A LA FRANCAISE -->
-					<article id="citeRouge">
-						<div class="restaurant-item-container flex--column">
-							<a
-								href="./pages/cite-rouge.html"
-								class="restaurant-item flex--column"
-							>
-								<div class="restaurant-image">
-									<img
-										src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-										alt="Restaurant picture"
-									/>
-								</div>
-								<div class="restaurant-details flex--between">
-									<div class="flex--column gap-xs">
-										<h3>À la française</h3>
-										<span class="subtitle">Cité Rouge</span>
-									</div>
-								</div>
-							</a>
-							<div class="favorite-icon">
-								<i class="fa-regular fa-heart"></i>
-								<div class="icon-container">
-									<i class="fa-solid fa-heart"></i>
-								</div>
-							</div>
-						</div>
-					</article>
-					<!-- LE DÉLICE DES SENS -->
-					<article id="folieMericourt">
-						<div class="restaurant-item-container flex--column">
-							<a
-								href="./pages/folie-mericourt.html"
-								class="restaurant-item flex--column"
-							>
-								<div class="restaurant-image">
-									<img
-										src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-										alt="Restaurant picture"
-									/>
-								</div>
-								<div class="restaurant-details flex--between">
-									<div class="flex--column gap-xs">
-										<h3>Le délice des sens</h3>
-										<span class="subtitle"
-											>Folie-Méricourt</span
-										>
-									</div>
-								</div>
-							</a>
-							<div class="favorite-icon">
-								<i class="fa-regular fa-heart"></i>
-								<div class="icon-container">
-									<i class="fa-solid fa-heart"></i>
-								</div>
-							</div>
-						</div>
-					</article>
-				</div>
-			</section>
-		</main>
-		<footer class="flex--column">
-			<div class="small-logo-container">
-				<img
-					src="./assets/images/logo/ohmyfood@2x.svg"
-					alt="OhMyFood logo"
-				/>
-			</div>
-			<ul class="flex--column gap-s">
-				<li class="flex--align gap-s">
-					<div class="small-icon">
-						<img
-							src="./assets/images/icons/cutlery.svg"
-							alt="Cutlery icon"
-						/>
-					</div>
-					<span>Proposer un restaurant</span>
-				</li>
-				<li class="flex--align gap-s">
-					<div class="small-icon">
-						<img
-							src="./assets/images/icons/handshake.svg"
-							alt="Handshake icon"
-						/>
-					</div>
-					<span>Devenir partenaire</span>
-				</li>
-				<li>Mentions légales</li>
-				<li>Contact</li>
-			</ul>
-		</footer>
-	</body>
+      <!-- PRODUCT FEATURES SECTION -->
+      <section class="features flex--center flex--column gap-l">
+        <div class="features-list flex--center gap-l">
+          <h2>Fonctionnement</h2>
+          <div class="feature-item flex--align gap-l">
+            <span class="badge">1</span>
+            <div class="feature-icon">
+              <img
+                src="./assets/images/icons/smartphone.svg"
+                alt="Smartphone icon"
+              />
+            </div>
+            <h4>Choisissez votre restaurant</h4>
+          </div>
+          <div class="feature-item flex--align gap-l">
+            <span class="badge">2</span>
+            <div class="feature-icon">
+              <img src="./assets/images/icons/list.svg" alt="List icon" />
+            </div>
+            <h4>Composez votre menu</h4>
+          </div>
+          <div class="feature-item flex--align gap-l">
+            <span class="badge">3</span>
+            <div class="feature-icon">
+              <img src="./assets/images/icons/store.svg" alt="Shop icon" />
+            </div>
+            <h4>Dégustez au restaurant</h4>
+          </div>
+        </div>
+      </section>
+      <!-- RESTAURANT LIST SECTION -->
+      <section id="restaurants-list" class="restaurants flex--center gap-l">
+        <div class="restaurants-list flex--center gap-l">
+          <h2>Restaurants</h2>
+          <!-- LA PALETTE DU GOÛT -->
+          <article id="menilmontant">
+            <div class="restaurant-item-container flex--column">
+              <div class="tag-new">Nouveau</div>
+              <a
+                href="./pages/menilmontant.html"
+                class="restaurant-item flex--column"
+              >
+                <div class="restaurant-image">
+                  <img
+                    src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                    alt="Restaurant picture"
+                  />
+                </div>
+                <div class="restaurant-details flex--between">
+                  <div class="flex--column gap-xs">
+                    <h3>La palette du goût</h3>
+                    <span class="subtitle">Ménilmontant</span>
+                  </div>
+                </div>
+              </a>
+              <div class="favorite-icon">
+                <i class="fa-regular fa-heart"></i>
+                <div class="icon-container">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- LA NOTE ENCHANTÉE -->
+          <article id="charonne">
+            <div class="restaurant-item-container flex--column">
+              <div class="tag-new">Nouveau</div>
+              <a
+                href="./pages/charonne.html"
+                class="restaurant-item flex--column"
+              >
+                <div class="restaurant-image">
+                  <img
+                    src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                    alt="Restaurant picture"
+                  />
+                </div>
+                <div class="restaurant-details flex--between">
+                  <div class="flex--column gap-xs">
+                    <h3>La note enchantée</h3>
+                    <span class="subtitle">Charonne</span>
+                  </div>
+                </div>
+              </a>
+              <div class="favorite-icon">
+                <i class="fa-regular fa-heart"></i>
+                <div class="icon-container">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- A LA FRANCAISE -->
+          <article id="citeRouge">
+            <div class="restaurant-item-container flex--column">
+              <a
+                href="./pages/cite-rouge.html"
+                class="restaurant-item flex--column"
+              >
+                <div class="restaurant-image">
+                  <img
+                    src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                    alt="Restaurant picture"
+                  />
+                </div>
+                <div class="restaurant-details flex--between">
+                  <div class="flex--column gap-xs">
+                    <h3>À la française</h3>
+                    <span class="subtitle">Cité Rouge</span>
+                  </div>
+                </div>
+              </a>
+              <div class="favorite-icon">
+                <i class="fa-regular fa-heart"></i>
+                <div class="icon-container">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- LE DÉLICE DES SENS -->
+          <article id="folieMericourt">
+            <div class="restaurant-item-container flex--column">
+              <a
+                href="./pages/folie-mericourt.html"
+                class="restaurant-item flex--column"
+              >
+                <div class="restaurant-image">
+                  <img
+                    src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                    alt="Restaurant picture"
+                  />
+                </div>
+                <div class="restaurant-details flex--between">
+                  <div class="flex--column gap-xs">
+                    <h3>Le délice des sens</h3>
+                    <span class="subtitle">Folie-Méricourt</span>
+                  </div>
+                </div>
+              </a>
+              <div class="favorite-icon">
+                <i class="fa-regular fa-heart"></i>
+                <div class="icon-container">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="flex--column">
+      <div class="small-logo-container">
+        <img src="./assets/images/logo/ohmyfood@2x.svg" alt="OhMyFood logo" />
+      </div>
+      <ul class="flex--column gap-s">
+        <li class="flex--align gap-s">
+          <div class="small-icon">
+            <img src="./assets/images/icons/cutlery.svg" alt="Cutlery icon" />
+          </div>
+          <span>Proposer un restaurant</span>
+        </li>
+        <li class="flex--align gap-s">
+          <div class="small-icon">
+            <img
+              src="./assets/images/icons/handshake.svg"
+              alt="Handshake icon"
+            />
+          </div>
+          <span>Devenir partenaire</span>
+        </li>
+        <li>Mentions légales</li>
+        <li>Contact</li>
+      </ul>
+    </footer>
+  </body>
 </html>
